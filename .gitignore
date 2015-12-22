@@ -1,3 +1,6 @@
+# XMLTV package directory
+pkg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
