@@ -69,6 +69,7 @@ class GrabXMLTV(object): # pylint: disable=too-few-public-methods
             print("DEBUG: Starting http download")
             for chunk in response.iter_content(CHUNK_SIZE):
                 xmltv.write(chunk)
+            xmltv.flush()
             print("DEBUG: Finished http download (bytes: %d)" % xmltv.tell())
 
             print("DEBUG: Starting s3 upload")
